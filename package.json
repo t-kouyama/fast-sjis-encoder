@@ -1,6 +1,6 @@
 {
   "name": "fast-sjis-encoder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fast Shift-JIS(MS932) encoder",
   "main": "index.js",
   "keywords": [

@@ -18,7 +18,7 @@ const sjis = require('fast-sjis-encoder');
 
 // Encode string to Shift-JIS byte array
 const bytes = sjis('Hello 世界');
-console.log(bytes); // Uint8Array(9) [72, 101, 108, 108, 111, 32, 144, 162, 138, 91]
+console.log(bytes); // Uint8Array(10) [72, 101, 108, 108, 111, 32, 144, 162, 138, 91]
 ```
 
 ## Benchmark
