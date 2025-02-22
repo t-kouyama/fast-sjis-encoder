@@ -1,6 +1,6 @@
 # fast-sjis-encoder
 
-Fast Shift-JIS(MS932) encoder
+Fast Shift-JIS(MS932) encoder - About 2x faster than iconv-lite
 
 ## Installation
 
@@ -10,13 +10,23 @@ npm install fast-sjis-encoder
 
 ## Usage
 
-```javascript
-// ES Modules
-import sjis from 'fast-sjis-encoder';
-// CommonJS
-const sjis = require('fast-sjis-encoder');
+Browser
+```html
+<script src="https://cdn.jsdelivr.net/npm/fast-sjis-encoder"></script>
+```
 
-// Encode string to Shift-JIS byte array
+ES Modules
+```javascript
+import sjis from 'fast-sjis-encoder';
+```
+
+CommonJS
+```javascript
+const sjis = require('fast-sjis-encoder');
+```
+
+Encode string to Shift-JIS byte array
+```javascript
 const bytes = sjis('Hello 世界');
 console.log(bytes); // Uint8Array(10) [72, 101, 108, 108, 111, 32, 144, 162, 138, 91]
 ```
@@ -31,7 +41,7 @@ Comparison with iconv-lite (operations per second)
 |   300 |           471,622 |    222,128 |  2.12x |
 |  3000 |            61,771 |     24,708 |  2.50x |
 
-Around 2x faster than iconv-lite.
+About 2x faster than iconv-lite.
 
 ## Decoder?
 
