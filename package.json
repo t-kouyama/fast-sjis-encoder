@@ -1,7 +1,7 @@
 {
   "name": "fast-sjis-encoder",
-  "version": "1.1.0",
-  "description": "Fast Shift-JIS(MS932) encoder",
+  "version": "1.1.1",
+  "description": "Fast Shift-JIS(MS932) encoder - About 2x faster than iconv-lite",
   "main": "index.min.js",
   "keywords": [
     "sjis",
